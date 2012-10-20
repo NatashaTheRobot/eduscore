@@ -3,6 +3,7 @@ source :rubygems
 gem 'rails', '3.2.8'
 gem 'pg'
 gem 'haml', '3.1.7'
+gem 'typhoeus', '0.4.2'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.4'
@@ -20,6 +21,8 @@ group :development, :test do
   gem 'database_cleaner', '0.9.1'
   gem 'fuubar', '1.1.0'
   gem 'rb-fsevent', '0.9.2'
+  gem 'vcr', '2.2.5'
+  gem 'fakeweb', '1.3.0'
 end
 
 # Gems used only for assets and not required

@@ -1,5 +1,6 @@
 require 'spec_helper'
 
 describe Topic do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should have_and_belong_to_many :courses }
+  it { should have_and_belong_to_many :lectures }
 end

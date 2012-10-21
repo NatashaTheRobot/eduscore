@@ -1,5 +1,3 @@
-module Crawler
-  class Coursera
+class Coursera < Crawler
 
-  end
 end

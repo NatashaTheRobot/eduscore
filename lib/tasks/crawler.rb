@@ -1,9 +1,11 @@
-module Crawler
-  def self.get(url)
+class Crawler
+
+  def self.get_body(url)
     response = Typhoeus::Request.get(url)
+    response.body
   end
-  def self.get_json(url)
-    response = self.get(url)
-    JSON.parse(response.body)
+
+  def self.json_parse(url)
+    JSON.parse self.get_body(url)
   end
 end

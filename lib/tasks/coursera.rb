@@ -3,15 +3,18 @@ class Coursera < Crawler
   URL = 'https://www.coursera.org/maestro/api/topic/list?full=1'
 
   def self.parse_courses
-    course_info = Crawler.json_parse(URL)
-    course_info.each do |course|
-      self.save_course(course) #if this is a new course
+    courses = Crawler.json_parse(URL)
+    self.create_courses(courses)
+  end
+
+  def self.create_courses(courses)
+    courses.each do |course|
+      self.create_course(course) unless Course.find_by_title(course['name'])
     end
   end
 
-  def self.save_course(course)
-    #check if this course already exists
-    # if the course does not exist, but is not saved, send email
+  private
+  def self.create_course(course)
     new_course = Course.new( provider:        'coursera',
                              cost:            0,
                              title:           course['name'],
@@ -26,45 +29,33 @@ class Coursera < Crawler
 
     new_course.topics = self.topic_list(course['categories'])
 
-    new_course.save
+    new_course.universities = self.university_list(course['universities'])
 
-      # save topic
-      # save university
-      # save
+    new_course.save
 
   end
 
-  private
   def self.instructor_list(instructors)
     instructors.collect do |instructor|
       details = instructor.split(', ')
-      Instructor.new( name:  details[0],
-                      title: details[1]
-      )
+      name = details[0]
+      Instructor.find_by_name(name) || Instructor.new( name:  name, title: details[1])
     end
   end
 
-
   #if topic already exists, will it still be mapped correctly?
   def self.topic_list(categories)
-    topics = []
-    categories.each do |category|
-      new_topics = category['name'].split(': ').join(', ').split(', ')
-      new_topics.each do |topic|
-        new_topic = Topic.new(name: topic.gsub('and ', ''))
-        #if topic == new_topics.first
-        #  p "#{topic} = #{new_topics.first}"
-        #  new_topic.category = 'subject'
-        #else
-        #  p "#{topic} != #{new_topics.first}"
-        #  new_topic.category = 'tag'
-        #end
-        topic == new_topics.first ?  new_topic.category = 'subject' : new_topic.category = 'tag'
-        topics << new_topic
-      end
+    categories.collect do |topic|
+      name = topic['name']
+      Topic.find_by_name(name) || Topic.new(name: name, category: 'subject')
     end
-    p topics
-    topics
+  end
+
+  def self.university_list(universities)
+    universities.collect do |university|
+      name = university['name']
+      University.find_by_name(name) || University.new(name: name, description: university['description'])
+    end
   end
 
 end

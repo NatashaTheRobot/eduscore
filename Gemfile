@@ -4,6 +4,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'haml', '3.1.7'
 gem 'typhoeus', '0.4.2'
+gem 'rake', '0.8.7'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.4'

@@ -16,11 +16,12 @@
 #
 
 Fabricator(:course) do
-  title       "MyString"
-  image_url   "MyString"
-  url         "MyString"
-  intro_video ""
-  description "MyText"
-  cost        "9.99"
-  start_date  "2012-10-21 10:13:13"
+  title           "Machine Learning"
+  image_url       "https://s3.amazonaws.com/coursera/topics/ml/large-icon.png"
+  url             "https://www.coursera.org/course/ml"
+  intro_video_url "http://www.youtube.com/watch?v=e0WKJLovaZg"
+  description     "Learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself."
+  cost            0
+  start_date      nil
+  provider        'coursera'
 end

@@ -5,3 +5,9 @@ task :get_coursera_courses => :environment do
   Coursera.parse_courses
   puts "Got all the new Coursera Courses successfully"
 end
+
+task :get_coursera_course_details => :environment do
+  puts "Getting coursera course details"
+  CourseraCourseDetail.parse_course_details
+  puts "Got the instructor description"
+end

@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coursera.org/maestro/api/topic/information?topic-id=ml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 04 Nov 2012 22:30:34 GMT
+      Server:
+      - nginx/1.2.4
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '3476'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"about_the_course":"<p>Machine learning is the science of getting
+        computers to act without being explicitly programmed. In the past decade,
+        machine learning has given us self-driving cars, practical speech recognition,
+        effective web search, and a vastly improved understanding of the human genome.
+        Machine learning is so pervasive today that you probably use it dozens of
+        times a day without knowing it. Many researchers also think it is the best
+        way to make progress towards human-level AI. In this class, you will learn
+        about the most effective machine learning techniques, and gain practice implementing
+        them and getting them to work for yourself. More importantly, you''ll learn
+        about not only the theoretical underpinnings of learning, but also gain the
+        practical know-how needed to quickly and powerfully apply these techniques
+        to new problems. Finally, you''ll learn about some of Silicon Valley''s best
+        practices in innovation as it pertains to machine learning and AI.</p>\n<p>This
+        course provides a broad introduction to machine learning, datamining, and
+        statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric
+        algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised
+        learning (clustering, dimensionality reduction, recommender systems, deep
+        learning). (iii) Best practices in machine learning (bias/variance theory;
+        innovation process in machine learning and AI). The course will also draw
+        from numerous case studies and applications, so that you''ll also learn how
+        to apply learning algorithms to building smart robots (perception, control),
+        text understanding (web search, anti-spam), computer vision, medical informatics,
+        audio, database mining, and other areas.</p>","other_description":"","photo":"https://s3.amazonaws.com/coursera/topics/ml/large-icon.png","preview_link":"https://class.coursera.org/ml/lecture/preview","small_icon_hover":"https://s3.amazonaws.com/coursera/topics/ml/small-icon.hover.png","large_icon":"https://s3.amazonaws.com/coursera/topics/ml/large-icon.png","video":"e0WKJLovaZg","university-ids":["stanford"],"id":2,"universities":[{"location_city":"","location_state":"","wordmark":null,"description":"The
+        Leland Stanford Junior University, commonly referred to as Stanford University
+        or Stanford, is an American private research university located in Stanford,
+        California on an 8,180-acre (3,310 ha) campus near Palo Alto, California,
+        United States.","short_name":"stanford","location_country":"","mailing_list_id":null,"location_lng":null,"home_link":"http://stanford.edu/online/courses","abbr_name":"Stanford","location":"","location_lat":null,"id":1,"logo":"https://coursera-university-assets.s3.amazonaws.com/0c/bd08e98d7eac5009500cadf04149e7/logo-stanford-front.png","favicon":"https://coursera-university-assets.s3.amazonaws.com/dc/581cda352d067023dcdcc0d9efd36e/favicon-stanford.ico","banner":"","display":true,"name":"Stanford
+        University"}],"small_icon":"https://s3.amazonaws.com/coursera/topics/ml/small-icon.png","self_service_course_id":null,"short_description":"Learn
+        about the most effective machine learning techniques, and gain practice implementing
+        them and getting them to work for yourself.","description":"","short_name":"ml","target_audience":1,"faq":"<div
+        class=\"coursera-course-faq\">\n<ul>\n<li><strong>What is the format of the
+        class?</strong>\n<p>The class will consist of lecture videos, which are broken
+        into small chunks, usually between eight and twelve minutes each. Some of
+        these may contain integrated quiz questions. There will also be standalone
+        quizzes that are not part of video lectures, and programming assignments.</p>\n</li>\n<li><strong>How
+        much programming background is needed for the course?</strong>\n<p>The course
+        includes programming assignments and some programming background will be helpful.</p>\n</li>\n<li><strong>Do
+        I need to buy a textbook for the course?</strong>\n<p>No, it is self-contained.</p>\n</li>\n<li><strong>Will
+        I get a statement of accomplishment after completing this class?</strong>\n<p>Yes.
+        Students who successfully complete the class will receive a statement of accomplishment
+        signed by the instructor.</p>\n</li>\n</ul>\n</div>","category-ids":["stats","cs-ai"],"visibility":0,"course_syllabus":"","course_format":"","social_link":"https://www.coursera.org/course/ml","suggested_readings":"","instructor":"Andrew
+        Ng, Associate Professor","categories":[{"id":16,"name":"Statistics, Data Analysis,
+        and Scientific Computing","mailing_list_id":null,"short_name":"stats","description":"Our
+        wide range of courses allows students to explore topics from many different
+        fields of study. Sign up for a class today and join our global community of
+        students and scholars!"},{"id":17,"name":"Computer Science: Artificial Intelligence,
+        Robotics, Vision","mailing_list_id":null,"short_name":"cs-ai","description":"Our
+        wide range of courses allows students to explore topics from many different
+        fields of study. Sign up for a class today and join our global community of
+        students and scholars!"}],"estimated_class_workload":"5-7 hours/week","name":"Machine
+        Learning","courses":[{"grading_policy_distinction":null,"start_day":23,"duration_string":"10
+        weeks","id":16,"start_month":4,"certificate_description":null,"start_date_string":"23
+        April 2012","grades_release_date":"2012-10-31","statement_design_id":null,"topic_id":2,"start_date":null,"status":0,"start_year":2012,"end_date":null,"instructors":[1244,1433,232841],"active":true,"deployed":true,"name":"12-001","grading_policy_normal":null,"home_link":"https://class.coursera.org/ml/","certificates_ready":false,"university_logo":""},{"grading_policy_distinction":"","start_day":20,"duration_string":"10
+        weeks","id":152,"start_month":8,"certificate_description":"Congratulations!
+        You have successfully completed the online Machine Learning course (ml-class.org).
+        To successfully complete the course, students were required to watch lectures,
+        review questions and complete programming assignments. ","start_date_string":"20
+        August 2012","grades_release_date":null,"statement_design_id":null,"topic_id":2,"start_date":null,"status":0,"start_year":2012,"end_date":null,"instructors":[3,232841],"active":true,"deployed":true,"name":"12-002","grading_policy_normal":"","home_link":"https://class.coursera.org/ml-2012-002/","certificates_ready":false,"university_logo":""},{"grading_policy_distinction":null,"start_day":null,"duration_string":"","id":970311,"start_month":null,"certificate_description":null,"start_date_string":null,"grades_release_date":null,"statement_design_id":null,"topic_id":2,"start_date":null,"status":1,"start_year":null,"end_date":null,"instructors":[1244],"active":false,"deployed":true,"name":"003","grading_policy_normal":null,"home_link":"https://class.coursera.org/ml-003/","certificates_ready":false,"university_logo":null}],"about_the_instructor":"<img
+        src=\"http://jan2012.ml-class.org/img/ng.png\" class=\"coursera-instructor-thumb\">\n<p><a
+        href=\"http://www.cs.stanford.edu/people/ang/\">Professor Andrew Ng</a>&nbsp;is
+        Director of the Stanford Artificial Intelligence Lab, the main AI research
+        organization at Stanford, with 20 professors and about 150 students/post docs.
+        At Stanford, he teaches Machine Learning, which with a typical enrollment
+        of 350 Stanford students, is among the most popular classes on campus. His
+        research is primarily on machine learning, artificial intelligence, and robotics,
+        and most universities doing robotics research now do so using a software platform
+        (ROS) from his group.</p>\n<p>In 2008, together with SCPD he started SEE (Stanford
+        Engineering Everywhere), which was Stanford''s first attempt at free, online
+        distributed education. Since then, over 200,000 people have viewed his machine
+        learning lectures on YouTube, and over 1,000,000 people have viewed his and
+        other SEE classes'' videos.</p>\n<p>Ng is the author or co-author of over
+        100 published papers in machine learning, and his work in learning, robotics
+        and computer vision has been featured in a series of press releases and reviews.
+        In 2008, Ng was featured in Technology Review''s TR35, a list of \"35 remarkable
+        innovators under the age of 35\". In 2009, Ng also received the IJCAI Computers
+        and Thought award, one of the highest honors in AI.</p>","university_logo":null,"course-ids":[16,152,970311],"display":true,"recommended_background":""}'
+    http_version: '1.1'
+  recorded_at: Sun, 04 Nov 2012 22:30:34 GMT
+recorded_with: VCR 2.2.5

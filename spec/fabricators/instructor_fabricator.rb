@@ -13,8 +13,8 @@
 #
 
 Fabricator(:instructor) do
-  name        "MyString"
-  title       "MyString"
-  description "MyText"
-  image_url   "MyString"
+  name        "Andrew Ng, Associate Professor"
+  title       "Associate Professor"
+  description nil
+  image_url   nil
 end

@@ -24,7 +24,7 @@ describe Coursera do
     end
 
     it "create new course instructors" do
-      Instructor.first.title.should eq 'Associate Professor'
+      Instructor.first.name.should eq 'Andrew Ng, Associate Professor'
       Instructor.first.courses.first.title.should eq 'Machine Learning'
     end
   end

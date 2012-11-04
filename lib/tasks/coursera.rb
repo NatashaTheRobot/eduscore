@@ -24,8 +24,7 @@ class Coursera < Crawler
                              image_url:       course['photo']
                            )
 
-    instructors = course['instructor'].split('. ')
-    new_course.instructors = self.instructor_list(instructors)
+    new_course.instructors = self.instructor_list(course['instructor'])
 
     new_course.topics = self.topic_list(course['categories'])
 
@@ -35,12 +34,8 @@ class Coursera < Crawler
 
   end
 
-  def self.instructor_list(instructors)
-    instructors.collect do |instructor|
-      details = instructor.split(', ')
-      name = details[0]
-      Instructor.find_by_name(name) || Instructor.new( name:  name, title: details[1])
-    end
+  def self.instructor_list(instructor)
+    [Instructor.find_by_name(instructor) || Instructor.new( name:  instructor)]
   end
 
   def self.topic_list(categories)

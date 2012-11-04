@@ -43,7 +43,6 @@ class Coursera < Crawler
     end
   end
 
-  #if topic already exists, will it still be mapped correctly?
   def self.topic_list(categories)
     categories.collect do |topic|
       name = topic['name']
